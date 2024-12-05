@@ -1,0 +1,39 @@
+<!-- staging/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Transcription - Staging</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/audio.css">
+</head>
+<body>
+    <div class="audio-container">
+        <div class="env-badge">Staging Environment</div>
+        <h1>Audio Transcription</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="audioFile" accept=".wav" />
+            <button id="uploadButton" disabled>Upload & Transcribe</button>
+        </div>
+
+        <div class="progress-section" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-text">Uploading: 0%</div>
+        </div>
+
+        <div class="results-section">
+            <h2>Transcription Results</h2>
+            <div id="transcriptionResults" class="results-box"></div>
+        </div>
+
+        <div class="status-indicator" id="statusIndicator">
+            Ready to process audio files
+        </div>
+    </div>
+
+    <script src="js/audio-api.js"></script>
+    <script src="js/file-handler.js"></script>
+</body>
+</html>

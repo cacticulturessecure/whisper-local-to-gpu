@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staging Version</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        .version { background: #4ecdc4; color: white; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="version">Version: 0.1-staging</div>
+    <p>Deployment Time: <span id="time"></span></p>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
